@@ -80,7 +80,7 @@ taskRouter.post("/addTask", async (req, res) => {
 });
 
 // Edit an existing task
-taskRouter.post("/editTask", async (req, res) => {
+taskRouter.put("/editTask", async (req, res) => {
   try {
     let { taskId } = req.query;
     let { title, category, description, deadline, assignedTo } = req.body;
