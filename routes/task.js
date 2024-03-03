@@ -24,7 +24,7 @@ taskRouter.get("/singleTask", async (req, res) => {
       error: error.message,
     });
   }
-});
+})
 
 // Add a new task to the board
 taskRouter.post("/addTask", async (req, res) => {
