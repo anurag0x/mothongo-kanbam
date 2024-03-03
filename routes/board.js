@@ -28,7 +28,7 @@ boardRouter.get("/getSingleBoard", async(req, res)=>{
         review : [],
         done : []
       }
-      console.log(task)
+     
       task.forEach(el => {
         if(el.category == "Unassigned"){
           obj.unassinged.push(el)
@@ -245,7 +245,7 @@ boardRouter.get("/getUser", async (req, res) => {
 
     return res.status(200).send({ isOk: true, message: "Here are all the user for inviting.", users: allUsers });
   } catch (error) {
-    console.log(error);
+    
     return res.status(500).send({
       isOk: false,
       message: "Internal Server Error!",

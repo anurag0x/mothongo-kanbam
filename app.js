@@ -38,7 +38,6 @@ app.use(express.json());
 
 // Sample route for testing
 app.get("/", (req, res) => {
-  console.log(process.env.GOOGLE_CLIENT_ID);
   return res.json({ message: "Hello world" });
 });
 
