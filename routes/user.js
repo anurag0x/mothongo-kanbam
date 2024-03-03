@@ -42,16 +42,16 @@ userRouter.get('/google', passport.authenticate('google', { scope: ['profile', "
 // Callback route after Google authentication
 userRouter.get('/google/callback',
   passport.authenticate('google', {
-    failureRedirect: 'http://localhost:3000/login' 
+    failureRedirect: 'https://mathongo-5s17lsusd-anurag0x.vercel.app/login' 
   }),
   async function(req, res) {
     try {
         let user = await User.findOne({ email: req.user.email })
         if (!user) {
             user = await User.create(req.user)
-            return res.redirect(`http://localhost:3000/login?client=${user._id}`)
+            return res.redirect(`https://mathongo-5s17lsusd-anurag0x.vercel.app/login?client=${user._id}`)
         }
-        return res.redirect(`http://localhost:3000/login?client=${user._id}`)
+        return res.redirect(`https://mathongo-5s17lsusd-anurag0x.vercel.app/login?client=${user._id}`)
     } catch (error) {
         return res.send({ error: error.message })
     }
