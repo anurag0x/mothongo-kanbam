@@ -65,7 +65,7 @@ API endpoints are rate-limited to 500 requests per minute to prevent abuse.
 The application is deployed on AWS EC2. Continuous Integration and Deployment are set up using GitHub Actions.
 
 ## Postman Documentation
-APIs are documented using Postman. You can find the public documentation [here](<link-to-postman-docs>).
+APIs are documented using Postman. You can find the public documentation [here]([<link-to-postman-docs>](https://www.postman.com/lunar-module-cosmologist-68497801/workspace/kanban-board/collection/29228169-ec0fbd4f-b015-4115-9220-12683a75329a?action=share&creator=29228169)https://www.postman.com/lunar-module-cosmologist-68497801/workspace/kanban-board/collection/29228169-ec0fbd4f-b015-4115-9220-12683a75329a?action=share&creator=29228169).
 
 ## Contributing
 Feel free to contribute to the development of this project by opening issues or pull requests.
